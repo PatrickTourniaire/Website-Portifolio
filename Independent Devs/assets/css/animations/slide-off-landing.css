@@ -1,0 +1,19 @@
+.foreground {
+    animation: 1.5s expand forwards;
+}
+
+.foreground-wrapper #header-wrapper {
+    animation: 1s slide-off forwards;
+}
+
+@keyframes slide-off {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes expand {
+    to {
+        width: 100%;
+    }
+}

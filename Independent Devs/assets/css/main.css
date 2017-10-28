@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+.foreground-wrapper {
+    width: 94vw;
+    height: 94vh;
+    margin: 3vh 3vw;
+    overflow: hidden;
+}
+
+.foreground-wrapper .foreground {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background: #71FFAA;
+    z-index: 5;
+}
+
+.foreground-wrapper #header-wrapper {
+    position: absolute;
+    z-index: 10;
+    
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.foreground-wrapper #header-wrapper #header {
+    margin: 0;
+}
+
+.foreground-wrapper #header-wrapper #header #circle {
+    color: #71FFAA;
+}
+
+.languages {
+    position: absolute;
+    top: 5px;
+    right: 3vw;
+}
+
+.languages p {
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #B1B1B1;
+}
+
+.languages p.active {
+    color: #000;
+}
+
+.menu {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 5%;
+    z-index: 10;
+    display: flex;
+}
+
+.menu #menu,
+.menu p {
+    display: inline-block;
+}
+
+.menu p {
+    transform: rotate(-90deg);
+    margin: 0;
+}
+
+.menu #menu #line {
+    margin: 10px;
+    width: 20px;
+    height: 2px;
+    background: #000;
+}
+
+.menu #menu #line:nth-child(2) {
+    width: 30px;
+    background: #000;
+    position: relative;
+    right: 10px;
+}
+
+.scroll {
+    transform: translateX(-50%);
+    left: 48%;
+    position: absolute;
+    bottom: 4vh;
+    z-index: 10;
+}
+
+.scroll p {
+    transform: rotate(90deg);
+    font-size: 12px;
+}
+
+.image {
+    margin: 0 3vw;
+    width: 94vw;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    background: url("../img/background.jpg") center fixed;
+    background-repeat: no-repeat;
+}

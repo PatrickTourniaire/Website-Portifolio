@@ -1,0 +1,28 @@
+.about-wrapper p {
+    animation: 1s 1s slide-reveal forwards;
+    position: relative;
+    opacity: 0;
+}
+
+.scroll {
+    animation: 1s slide-down forwards;
+}
+
+@keyframes slide-reveal {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+    
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-down {
+    to {
+        bottom: -100%;
+        opacity: 0;
+    }
+}

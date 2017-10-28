@@ -1,0 +1,93 @@
+.info-wrapper {
+    width: 100%;
+    position: absolute;
+    height: 300px;
+    margin-top: -150px;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-wrapper .cl-2 {
+    width: 40%;
+    height: 100%;
+}
+
+
+.info-wrapper .cl-1 {
+    height: 100%;
+    width: 40%;
+}
+
+.info-wrapper .cl-3 {
+    width: 20%;
+    height: 100%;
+}
+
+.info-wrapper .cl-1 #img {
+    width: 150px;
+    height: 200px;
+    margin-left: -75px;
+    left: 50%;
+    position: relative;
+    background: url("../images/hair-model.jpg") no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: solid 1.4px #F8B195;
+}
+
+.info-wrapper .cl-2 #header {
+    text-transform: uppercase;
+    color: #ECB6A1;
+    font-size: 26px;
+}
+
+.info-wrapper .cl-2 .text-box {
+    color: #95989A;
+    opacity: 0.42;
+    position: relative;
+    left: 20px;
+}
+
+.info-wrapper .cl-2 .text-box * {
+    display: inline-block;
+}
+
+.info-wrapper .cl-2 .text-box #sep-line {
+    position: relative;
+    width: 1px;
+    height: 100%;
+    background: #F8B195;
+}
+
+@media only screen and (max-width: 700px) {
+    .info-wrapper {
+        width: 100%;
+        position: absolute;
+        height: 300px;
+        margin-top: -150px;
+        top: 35%;
+        display: block;
+    }
+    
+    .info-wrapper .cl-2,
+    .info-wrapper .cl-1 {
+        position: relative;
+        width: 60%;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    
+    .info-wrapper .cl-1 {
+        height: 100%;
+        width: 40%;
+    }
+
+    .info-wrapper .cl-3 {
+        width: 0%;
+        height: 100%;
+    }
+}

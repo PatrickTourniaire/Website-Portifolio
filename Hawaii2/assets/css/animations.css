@@ -1,0 +1,43 @@
+.center {
+    animation: 1.5s fade-in;
+}
+
+.splitter-cards {
+    animation: 1.5s slide-up;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    0%{
+        top: 120%;
+        opacity: 0;
+    }
+    
+    100% {
+        top: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-pres-solid {
+    100% {
+        top: 20%;
+        left: 53%;  
+    }
+}
+
+@keyframes slide-pres-img {
+    100% {
+        left: 57%;
+        top: -8%; 
+    }
+}

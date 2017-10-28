@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Aaargh;
+    src: url("Aaargh.ttf");
+}
+
+body {
+    background: #111111;
+    margin: 0;
+    font-family: Aaargh;
+}
+
+.center {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+#svg {
+    width: 70vw;
+}
+
+.center p {
+    text-transform: uppercase;
+    color: #F92B2B;
+    opacity: 0.3;
+    font-size: 2vw;
+    margin: 0;
+}

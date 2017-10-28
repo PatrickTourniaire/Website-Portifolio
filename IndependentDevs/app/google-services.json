@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "700714267694",
+    "firebase_url": "https://independent-developers.firebaseio.com",
+    "project_id": "independent-developers",
+    "storage_bucket": "independent-developers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700714267694:android:6e65bf0f86e9e64e",
+        "android_client_info": {
+          "package_name": "com.independent.android.independentdevs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700714267694-s86h63tbl2op8qmcpu7mdjr90uihgaf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQtWqb7sfMu6VS2wsSCHLYggQupiwLyrg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

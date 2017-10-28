@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hawaii Frisør</title>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+        
+        <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/prices.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/order.css">
+        
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        
+        <script src="assets/js/positions.js"></script>
+        <script src="assets/js/scroll.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>Hjem</li>
+                <li>Om Oss</li>
+                <li>Priser</li>
+                <li>Bestill Time</li>
+            </ul>
+        </nav>
+        
+        <div class="home">
+            <div class="header-wrapper center">
+                <p id="header">Beste I Byen</p>
+                <p id="header-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Morbi ornare sed turpis sed pellentesque. 
+                    Morbi massa elit, auctor ac congue in.</p>
+            </div>
+            
+                    
+                <div class="background"></div>
+            
+        </div>
+        
+        <div class="splitter-cards">
+            <div class="card big">
+                <img src="assets/icons/marker.png" id="marker">
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. 
+                    Morbi ornare sed turpis sed 
+                    pellentesque.</p>
+            </div>
+            <div class="card big">
+                <img src="assets/icons/scissors.png" id="scissors">
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. 
+                    Morbi ornare sed turpis sed 
+                    pellentesque.</p>
+            </div>
+            <div class="card big">
+                <img src="assets/icons/star.png" id="star">
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. 
+                    Morbi ornare sed turpis sed 
+                    pellentesque.</p>
+            </div>
+        </div>
+        
+        <div class="about">
+            
+            <div class="info-wrapper">
+                <div class="cl-1">
+                    <div id="img"></div>
+                </div>
+                
+                <div class="cl-2">
+                    <p id="header">Mer enn bare hår</p>
+                    <div class="text-box">
+                        <div id="sep-line"></div>
+                        
+                        <p id="txt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Donec sollicitudin orci nec ipsum aliquam porttitor. 
+                            Vestibulum varius ipsum vitae nulla ullamcorper, vel dictum tortor facilisis. 
+                            Vivamus et porta tortor. Aliquam efficitur mollis ante semper faucibus. 
+                            Duis elementum at ligula a ullamcorper. Interdum et malesuada fames ac 
+                            ante ipsum primis in faucibus. Nullam sollicitudin.</p>
+                    </div>
+                </div>
+                
+                <div class="cl-3">
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="prices">
+            <div class="header-wrapper top">
+                <p id="header">PRISER</p>
+                <p id="header-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Morbi ornare sed turpis sed pellentesque.</p>
+            </div>
+            
+            <div class="table-wrapper">
+                <div class="price-table">
+                    <div class="card-price medium">
+                        <img src="assets/icons/male.png" id="icon">
+                        
+                        <div class="price-text">
+                            <p>Menn:</p>
+                            <p>350kr</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-price medium">
+                        <img src="assets/icons/woman.png" id="icon">
+                        
+                        <div class="price-text">
+                            <p>Damer:</p>
+                            <p>350kr</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-price medium">
+                        <img src="assets/icons/children.png" id="icon">
+                        
+                        <div class="price-text">
+                            <p>Barn:</p>
+                            <p>350kr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="order">
+            <div class="booking-phone">
+                <p id="header">Telefonreservasjon</p>
+                
+                <div id="booking-form">
+                    <div id="phone">
+                        <p>+47 000 00 000</p>
+                    </div>
+                    
+                    <div id="phone">
+                        <p>+47 000 00 000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p id="creator">A Patrick Tourniaire Custom</p>
+            <div class="footer-act">
+                <div class="contact">
+
+                    <p id="header">Kontakt Oss</p>
+
+                    <p id="phone">+47 000 00 000</p>
+                    <p id="phone">+47 000 00 000</p>
+
+                    <p>ola@nordmann.no</p>
+
+                </div>
+
+                <div class="nav">
+                    <p id="header">Navigasjon</p>
+
+                    <p id="home">Hjem</p>
+                    <p id="about">Om Oss</p>
+                    <p id="prices">Priser</p>
+                    <p id="order">Bestill Time</p>
+                </div>
+
+                <div class="offices">
+                    <p id="header">Lokaler</p> 
+                    
+                    <div id="map"></div>
+                    <script>
+                      function initMap() {
+                        var sandvika = {lat: 59.892263, lng: 10.525245};
+                        var nesbru = {lat: 59.864009,lng: 10.488974};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                          zoom: 10,
+                          center: sandvika
+                        });
+                        var sandvikaMarker = new google.maps.Marker({
+                          position: sandvika,
+                          map: map
+                        });
+                          
+                        var nesbruMarker = new google.maps.Marker({
+                          position: nesbru,
+                          map: map
+                        });
+                      }
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4lU1hwlQSaI2o0WaDLA3qaZidu7vmV8g&callback=initMap">
+                    </script>
+                </div>
+            </div>
+            <div class="lower-footer">
+                <div class="center">
+                    <div class="info">
+                        <p>Privacy Policy</p>
+                        <p>Sitemap</p>
+                    </div>
+                    <p>Copyright Patrick Tourniaire © 2017 -</p>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

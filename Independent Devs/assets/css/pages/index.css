@@ -1,0 +1,20 @@
+.about-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 30%;
+}
+
+.about-wrapper #header {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.about-wrapper #header:not(:nth-child(2)) {
+    color: #fff;
+}
+
+.about-wrapper :nth-child(2) {
+    
+}
